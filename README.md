@@ -32,16 +32,20 @@ sudo apt install libmp3lame0 libavcodec-extra
 
 ---
 
+## Get source
+
+Press F12 > tab `Network` search `lectures`
+- `media_sources`: video
+- `captions`: subtitle
+
+---
+
 ## Cách chạy
 
 ### Lệnh cơ bản (subtitle đã là tiếng Việt)
 
 ```bash
-python main.py \
-  --video storage/videos/1.m3u8 \
-  --subtitle storage/subtitles/1.vtt \
-  --skip-translate \
-  --add-subtitle
+python main.py --video storage/videos/1.m3u8 --subtitle storage/subtitles/1.vtt --skip-translate --add-subtitle
 ```
 
 ### Lệnh đầy đủ options

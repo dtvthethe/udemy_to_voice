@@ -42,3 +42,12 @@ python main.py \
   --lang en \             # en / ja / ko / auto
   --no-original-audio     # tắt hẳn tiếng gốc
 ```
+
+## Flow Dự Án
+1. Đọc file subtitle .vtt từ thư mục storage/subtitles/
+2. Đọc file video gốc .m3u8 từ thư mục storage/videos/
+3. Nếu không có option --skip-translate thì dịch subtitle sang tiếng Việt
+4. Tạo file thuyết minh TTS từ subtitle tiếng Việt
+5. Ghép thuyết minh vào video gốc, nếu có option --add-subtitle thì sẽ thêm subtitle tiếng Việt vào video, nếu không có thì chỉ ghép thuyết minh mà không có subtitle
+6. Xuất file video đã được ghép thuyết minh
+

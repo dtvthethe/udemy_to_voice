@@ -224,3 +224,4 @@ storage/output/*
 !storage/output/.gitkeep
 dubber_temp/
 output_dubbed.mp4
+input.json
